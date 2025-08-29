@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!--Icono titulo-->
+    <link rel="shortcut icon" href="imagenes/taza-de-cafe.png" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="style/productsStyle.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!--Booostrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=REM:wght@200&display=swap" rel="stylesheet">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body id="body-initial">
+    
+    <div class="contenido_proyecto">
+
+        <div class="content">
+            <div class="contenido_barra_products">
+        
+                <header class="barra">
+                    
+                    <ul>
+                        
+                        <div class="logo">
+                            <li>
+                                <a href="index.html">
+                                    <img class="logo_cafe" src="imagenes/taza-de-cafe.png" alt="logo">
+                                </a>
+                            </li>
+                        </div>
+                        
+                        <div class="enlaces_header_products">
+                            <li class="col">
+                                <a href="index.html">
+                                    <span class="nav-item">Inicio</span>
+                                </a>
+                            </li>
+
+                            <li class="col">
+                                <a href="#Cafe">
+                                    <span class="nav-item">Productos café</span>
+                                </a>
+                            </li>
+                            
+                            <li class="col">
+                                <a href="#Bar">
+                                    <span class="nav-item">Productos Bar</span>
+                                </a>
+                            </li>
+                        </div>
+                        
+                    </ul>
+                    
+                </header>
+        
+                <div class="texto">
+                    <p class="titulo">Fulano Sanchez</p>
+                    <p class="frase">DESCRIPCIONES</p>
+        
+                </div>
+        
+            </div>
+        
+            <div class="contenido_home">
+        
+                <div class="products-coffe-container">
+                    <div class="container-tittle">
+                        <h2 class="cofee-tittle">
+                            Productos café
+                        </h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam quia sunt nihil, ullam veniam laborum inventore accusamus. Nisi adipisci dolor vero suscipit quisquam eaque ullam placeat nemo tempore expedita!</p>
+                    </div>
+    
+                    <div class="slide-container">
+    
+                        <div class="slide" id="slide">
+    
+                            <button class="arrow arrow-prev" id="prev" data-button="prev" onclick="app.processingButton(event)"><i class="bi bi-chevron-left"></i></button>
+    
+                            <section class="slide-body" id="slider-body">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/11135967/pexels-photo-11135967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/5792099/pexels-photo-5792099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/7488733/pexels-photo-7488733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/11135967/pexels-photo-11135967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/5792099/pexels-photo-5792099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/7488733/pexels-photo-7488733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+    
+                            <button class="arrow arrow-next" id="next" data-button="next" onclick="app.processingButton(event)"><i class="bi bi-chevron-right"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="products-bar-container">
+                    <div class="container-tittle">
+                        <h2 class="cofee-tittle">
+                            Productos bar
+                        </h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi sed quam suscipit maiores. Minima, perferendis! Corrupti velit recusandae dolorem mollitia maiores veritatis sequi aperiam non, facilis, quo, odio voluptas. Dolor!
+                        </p>
+                    </div>
+    
+                    <div class="slide-container">
+    
+                        <div class="slide" id="slide">
+    
+                            <button class="arrow arrow-prev" id="prev" data-button="prev" onclick="app.processingButton(event)"><i class="bi bi-chevron-left"></i></button>
+    
+                            <section class="slide-body" id="slider-body">
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/11135967/pexels-photo-11135967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/5792099/pexels-photo-5792099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/7488733/pexels-photo-7488733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/11135967/pexels-photo-11135967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/5792099/pexels-photo-5792099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-front">
+                                        <img src="https://images.pexels.com/photos/7488733/pexels-photo-7488733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-product">
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <h3 class="product-name">Café</h3>
+    
+                                        <p class="prduct-description">
+                                            Café expresso con leche deslactosada que le dá un toque suave al paladar
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+    
+                            <button class="arrow arrow-next" id="next" data-button="next" onclick="app.processingButton(event)"><i class="bi bi-chevron-right"></i></button>
+                        </div>
+    
+                    </div>
+                </div>
+        
+            </div>
+
+            
+        </div>
+    
+        <footer>
+    
+            <div class="footer">
+    
+                <p>kjfjjcojbcobojsdc</p>
+                <p>lasknjasnojcojacojabc</p>
+                <p>jNONDPINPINDPIN</p>
+    
+            </div>
+    
+        </footer>
+    </div>
+
+    <script src="js/products.js"></script>
+
+</body>
+</html>

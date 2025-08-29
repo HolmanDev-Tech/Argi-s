@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-weight: 0;
+  }
+  
+  #body-initial{
+      background-color: #490e11ee;
+  }
+  
+  /* Barra de navegacion */
+  .contenido_barra{
+      width: 100%;
+      height: 560px;
+      position: relative absolute;
+      background-image: url(../imagenes/maine-coon-694730_1920.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1;
+      /* box-shadow: -1px 9px 35px -7px rgba(0,0,0,0.75); */
+  }
+  
+  
+  .logo_cafe{
+      width: 40px;
+      margin-left: 40px;
+  }
+  
+  .barra ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      height: 60px;
+      align-items: center;
+      padding-top: 40px;    
+  }
+  
+  .barra li a{
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      position: fixed;
+      z-index: 3;
+  }
+  
+  .enlaces_header{
+      display: flex;
+      margin-right: 70px;
+  }
+  
+  .enlaces_header li{
+      margin-inline: 2.5em;
+  }
+  
+  .texto{
+      margin-left: 10%;
+      margin-top: 10%;
+      font-family: 'REM', sans-serif;
+  }
+  
+  .texto p{
+      color: white;
+      margin: 0;
+  }
+  
+  .titulo{
+      font-size: 50px;
+  }
+  
+  .frase{
+      font-size: 20px;
+      font-weight: lighter;
+      letter-spacing: 7px;
+  }
+  
+  /* Contenido inicio */
+  
+  .contenido_home{
+      margin-top: -20px;
+      display: flex;
+      position: absolute relative;
+      flex-direction: column;
+      z-index: 235;
+      border-radius: 25px 25px 0 0;
+      box-shadow: 0px -20px 28px rgba(0, 0, 0, 0.74);
+      padding: 2em 0 2em 0;
+      width: 100%;
+      background-color: #490e11;
+  }
+  
+  .cartas_home{
+      width: 45%;
+      height: 300px;
+      margin-left: 5%;
+      margin-block: .9em;
+      display: flex;
+      background-color: #0e3649ee;
+  }
+  
+  .cartas_home .imagen_home{
+      width: 300px;
+      height: 100%;
+      overflow: hidden;
+      position: static;
+  }
+  
+  .cartas_home .imagen_home img{
+      display: block;
+      height: 100%;
+  }
+  
+  .cartas_home .informacion{
+      width: 50%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+  }
+  
+  .cartas_home .informacion p{
+      color: white;
+      margin: 0;
+  }
+  
+  .des_home{
+      font-size: 30px;
+  }
+  
+  .dia_home{
+      font-size: 13px;
+  }
+  
+  .button_reserva{
+      width: 60%;
+      color: white;
+      background-color: #490e1149;
+  }
+  
+  /* Footer */
+  
+  .footer{
+      width: 100%;
+      height: 200px;
+      background-color: rgba(0, 0, 0, 0.568);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute fixed;
+      z-index: 550;
+  }
+  
+  .footer p{
+      color: white;
+  }
+
+
+
+

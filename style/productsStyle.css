@@ -1,0 +1,275 @@
+.contenido_barra_products{
+    width: 100%;
+    height: 600px;
+    position:relative absolute;
+    background-image: url("../imagenes/licores.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.enlaces_header_products{
+    width: 30%;
+    display: flex;
+    margin-right: 3em;
+}
+
+.enlaces_header_products li a{
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 12em;
+    padding: .2em 0 .2em 0;
+    margin-inline: 1em;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.enlaces_header_products li:hover a{
+    background-color: #E3DAC9;
+    color: #490e11ee;
+}
+
+.enlaces_header_products li span{
+    font-size: 18px;
+}
+
+.barra.scrolled{
+    background-color: #490e11ac;
+}
+
+.contenido_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.products-coffe-container,.products-bar-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.products-bar-container{
+    flex-direction: row;
+}
+
+.container-tittle{
+    width: 30%;
+    text-align: center;
+}
+
+.slide-container{
+    width: 60%;
+    position: relative;
+}
+
+.slide{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto;
+    max-width: 75vw;
+    height: 340px;
+    overflow: hidden;
+    padding: 13em 5em;
+}
+
+.slide-body{
+    color: white;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+.arrow{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 875 !important;
+    width: 1.35em;
+    height: 1.35em;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.arrow i{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.arrow-prev{
+    left: 30px;
+    position: absolute;
+}
+
+.arrow-next{
+    right: 30px;
+}
+
+.cofee-tittle{
+    color: white;
+    font-family: "Charm", cursive;
+    font-size: 50px;
+    text-indent: 5px;
+}
+
+.slide-body .card{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 210px;
+    height: 304px;
+    background-color: blue;
+    padding: 0;
+    overflow: visible;
+    background: transparent !important;
+    border: none !important;
+    margin-inline: 1em;
+}
+
+.card div{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.3s;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ .card .card-front{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transform: perspective(200px) rotateY(0deg);
+    border-radius: 22px;
+    box-shadow: 2px 10px 25px rgba(0, 0, 0, 0.611);
+}
+
+.card .card-back{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+    transform: perspective(200px) rotateY(180deg);
+    box-shadow: 0 5px 10px rgb(72, 69, 69);
+}
+
+.product-name,.prduct-description{
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.card .card-back .product-name{
+    font-family: "Charm", cursive;
+    font-size: 38px;
+    font-style: oblique;
+    margin-bottom: .5em;
+}
+
+.card:hover .card-front{
+    transform: perspective(1500px) rotateY(180deg);
+}
+
+.card:hover .card-back{
+    transform: perspective(1500px) rotateY(360deg);
+}
+
+.img-product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width: 320px) and (max-width: 620px){
+    .products-coffe-container,.products-bar-container{
+        flex-direction: column;
+    }
+
+    .container-tittle{
+        width: 100%;
+    }
+
+    .slide-container{
+        width: 100%;
+        margin: .3em 0;
+    }
+
+    .slide{
+        max-width: 90vw;
+        overflow-x: scroll;
+    }
+
+    .arrow-next,.arrow-prev{
+        display: none;
+    }
+
+    .slide-body{
+        left: -30px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-back::after{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card-back::after{
+        content: "";
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transition: .5s ease-in-out all;
+        z-index: 1;
+        transform-origin: center;
+    }
+    
+    .card-back:hover::after{
+        transform: scale(700);
+        background: #490e11d5;
+    }
+    
+    .card-back:hover .prduct-description{
+        color: white;
+    }
+    
+    .card-back:hover .product-name{
+        color: white;
+    }
+}
